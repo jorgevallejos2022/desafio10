@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans&family=PT+Serif+Caption&display=swap');
+
+body{
+    margin: 7%;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+}
+a{
+    text-decoration: none;
+}
+.vec , .nos{
+    display:inline-block;
+    font-size: 32px;
+    font-family: 'PT Mono', monospace;
+    color: #04146c;
+}
+.nos:active ,.nos:hover{
+    font-family: 'PT Mono', monospace;
+    font-weight: 700;
+    font-size: 32px;
+    color: #0a2ff1;
+}
+h1{
+    font-family: 'PT Serif Caption', serif;
+    font-weight: 400;
+    font-size: 80px;
+    color: #0a2ff1;
+}
+p{
+    font-family: 'PT Serif Caption', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #04146c;
+}
+h5, ul{
+    font-family: 'PT Sans', sans-serif;
+    font-weight:bold;
+    font-size: 40px;
+    color: #04146c;
+}
+h5{
+    font-family: 'PT Serif Caption', serif;
+}
+ul{
+    font-weight: 400;
+}
+.vec::after{
+    content: "/";
+}
+ul:first-of-type li:nth-child(2){
+    list-style-image: url(recursos/foto.svg);
+}
+ul:first-of-type li:nth-child(1){
+    list-style-image: url(recursos/vector.svg);
+}
+ul:nth-of-type(2) li:nth-child(1){
+    list-style-image: url(recursos/licencia.svg);
+}
+ul:nth-of-type(2) li:nth-child(2){
+    list-style-image: url(recursos/precio.svg);
+}
